@@ -1,0 +1,67 @@
+🎮 Valorant Simulator
+📝 Descrição
+Este projeto implementa um simulador simplificado do jogo Valorant utilizando Programação Orientada a Objetos (POO) em Python. O sistema simula o gerenciamento de agentes e suas habilidades, incluindo mecânicas de recarga em tempo real.
+
+🏗️ Estrutura do Projeto
+Classes Principais
+1. Classe Habilidade
+Representa as habilidades dos agentes
+
+Atributos:
+
+nome: Nome da habilidade
+descricao: Descrição do efeito
+carga_maxima: Número máximo de cargas
+carga_atual: Cargas disponíveis
+tempo_recarga: Tempo para recarregar (120s)
+proxima_recarga: Timestamp da próxima recarga
+Métodos:
+
+usar(): Utiliza uma carga da habilidade
+verificar_recarga(): Controla o sistema de recarga
+recarregar(): Restaura as cargas da habilidade
+2. Classe Agente
+Gerencia os agentes e suas habilidades
+
+Atributos:
+
+nome: Nome do agente
+tipo: Classe do agente (Duelista, Sentinela, etc)
+habilidades: Dicionário com as habilidades do agente
+Métodos:
+
+adicionar_habilidade(): Adiciona nova habilidade ao agente
+usar_habilidade(): Ativa uma habilidade específica
+mostrar_status(): Exibe informações do agente
+usar_habilidade_por_numero(): Seleciona habilidade por índice
+🔄 Conceitos de POO Aplicados
+Encapsulamento
+
+Atributos e métodos organizados em classes coesas
+Dados e comportamentos relacionados agrupados
+Composição
+
+Agentes possuem múltiplas habilidades
+Relacionamento "tem um" entre Agente e Habilidade
+Abstração
+
+Classes representam conceitos do jogo de forma simplificada
+Interface clara para interação com objetos
+💻 Como Usar
+Execute o arquivo principal:
+No menu interativo:
+Escolha um agente (1-4)
+Selecione uma habilidade pelo número
+Observe o sistema de recarga em tempo real
+⚙️ Funcionalidades
+Gestão de Cargas: Sistema de cargas limitadas por habilidade
+Recarga em Tempo Real: Contador regressivo visual
+Menu Interativo: Interface amigável para seleção de agentes
+Status Dinâmico: Visualização das cargas disponíveis
+Múltiplos Agentes: Implementação de diversos personagens do jogo
+🎯 Agentes Disponíveis
+Jett (Duelista)
+Sage (Sentinela)
+Reyna (Duelista)
+Omen (Controlador)
+Este projeto demonstra a aplicação prática de POO para criar um sistema interativo e dinâmico, simulando mecânicas básicas do jogo Valorant.
